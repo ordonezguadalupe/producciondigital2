@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Glacial Indifference';
+  src: url("C:\Users\guada\OneDrive\Escritorio\produccion2\tipografías\GlacialIndifference-Regular.otf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Leaner Bold';
+  src: url("C:\Users\guada\OneDrive\Escritorio\produccion2\tipografías\Leaner-Bold\Leaner-Bold.ttf") format('truetype');
+}
+
+body {
+  font-family: 'Glacial Indifference';
+  margin: 0;
+}
+
+header {
+  
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+.titulo {
+  padding-left: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.logo {
+  width: 52%;
+}
+
+.collapse navbar-collapse {
+  display: flex;
+  justify-content: flex-end;
+  font-family: Glacial Indifference;
+}
+
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navbar a:hover {
+  opacity: .6 ;
+}
+
+.navbar-toggler {
+  float: left;
+}
+
+.titulo2 {
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 0px;
+  font-family: 'Leaner Bold';
+}
+
+.text-center {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.text-center ::before{
+    transition: all .2s ease-in;
+    background-color: white;
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.text-center :hover::before{
+  opacity: .6 ;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: sans-serif;
+  color: white;
+  font-size: large;
+}
+
+
+.row {
+  justify-content: center;
+  padding: 30px;
+  padding-bottom: 110px;
+}
+
+
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  font-family: Glacial Indifference;
+}
+
+
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
+
